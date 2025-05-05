@@ -34,4 +34,24 @@ echo "El resultado de la multiplicacion es $resultado";
 
 echo "hola alumnos";
 
+function test()
+{
+$nombre = "Juan";
+}
+//echo $nombre;
+
+//Variables globales
+
+echo "<br>";
+
+$contador = 1;
+function incrementar()
+{
+    global $contador;
+    $contador++;
+}
+incrementar();
+
+echo $contador;
+
 ?>
