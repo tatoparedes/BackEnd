@@ -32,4 +32,6 @@ return $num1*$num2;
 $resultado = Multiplicar(3,4);
 echo "El resultado de la multiplicacion es $resultado";
 
+echo "hola alumnos";
+
 ?>
