@@ -1,5 +1,8 @@
+
+
 <h1>Empezando clase Semana 6</h1>
 <?php
+include ('funciones.php');
 //crear funcion
 function Saludar()
 {
@@ -51,7 +54,9 @@ function incrementar()
     $contador++;
 }
 incrementar();
-
 echo $contador;
 
+$resultadoresta = restar(9,8);
+echo "<br>";
+echo 'La resta es' ,$resultadoresta;
 ?>
