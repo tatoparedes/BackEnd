@@ -2,7 +2,8 @@
 
 <h1>Empezando clase Semana 6</h1>
 <?php
-include ('funciones.php');
+require ('funciones.php');
+//require ('funciones2.php');
 //crear funcion
 function Saludar()
 {
@@ -59,4 +60,42 @@ echo $contador;
 $resultadoresta = restar(9,8);
 echo "<br>";
 echo 'La resta es' ,$resultadoresta;
+
+$cadena = "Hola soy una cadena";
+
+echo 'la longitud de esta cadena es ',strlen($cadena);
+echo "<br>";
+echo 'Esta cadena ahora esta en mayusculas ',strtoupper($cadena);
+echo "<br>";
+echo 'Esta cadena ahora esta en minusculas ',strtolower($cadena);
+echo "<br>";
+echo 'Cambio cadena por string ', str_replace ('cadena','string',$cadena);
+
+echo "<br>";
+
+$es = is_numeric(58);
+if($es)
+{
+echo 'es numerico';
+}
+
+echo "<br>";
+
+$es = is_numeric('a');
+if($es)
+{
+echo 'es numerico';
+}
+else
+{
+    echo 'no es numerico';
+}
+
+echo "<br>";
+//echo ini_get("display_errors");
+echo ini_set("display_errors",0);
+//echo ini_get("display_errors");
+
+$otra =9;
+echo $otra2;
 ?>
