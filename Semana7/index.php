@@ -21,6 +21,40 @@ echo $futbol[0];
 echo '<br>';
 echo $asociativo['Edad'];
 
+list($siemprecampeona, $alvecescampenoana , $nosabecampeonar) = $futbol;
+
+echo '<br>';
+echo 'Siempre campeona: ', $siemprecampeona;
+
+echo '<br>';
+echo 'A veces campeona: ',$alvecescampenoana;
+
+echo '<br>';
+echo 'No sabe campeonar: ', $nosabecampeonar;
+
+echo '<br>';
+$cadena = 'Esta clase no me aburre';
+$arreglocadena = explode(' ',$cadena);
+print_r($arreglocadena);
+
+echo '<br>';
+$rangos = range(1,100);
+print_r($rangos);
+
+echo '<br>';
+
+$letras = range('a','p');
+print_r($letras);
+
+echo '<br>';
+
+$directorios = scandir('C:\xampp\htdocs');
+print_r($directorios);
+
+
+
+
+
 
 
 
