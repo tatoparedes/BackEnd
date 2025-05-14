@@ -38,7 +38,7 @@ $arreglocadena = explode(' ',$cadena);
 print_r($arreglocadena);
 
 echo '<br>';
-$rangos = range(1,100);
+$rangos = range(1,5);
 print_r($rangos);
 
 echo '<br>';
@@ -51,16 +51,56 @@ echo '<br>';
 $directorios = scandir('C:\xampp\htdocs');
 print_r($directorios);
 
+echo '<br>';
+echo '<br>';
 
+$futbol2 = array('cristal','universitario','alianza');
 
-/*
-foreach($animales as $item)
+if (in_array('cristal',$futbol2))
 {
-    echo $item,'<br>';
-    
+    echo 'Si esta';
 }
-    */
+else
+{
+    echo 'No esta';
+}
 
+unset($futbol2[2]);
+echo '<br>';
+print_r($futbol2);
+echo '<br>';
+ $frutas = ['manzana','uva','mandarina','platano']; 
+echo current($frutas);
+next($frutas);
+next($frutas);
+echo '<br>';
+echo current($frutas);
+echo '<br>'; 
+$frutas = array_reverse($frutas);
+print_r($frutas);
+shuffle($frutas);
+echo '<br>'; 
+print_r($frutas);
+echo '<br>'; 
+
+echo '<h1>pilas</h1>'; 
+array_push($frutas, "Pera"); //agregar al final
+echo '<br>'; 
+print_r($frutas);
+array_pop($frutas); //elimina el final
+echo '<br>'; 
+print_r($frutas);
+
+echo '<h1>colas</h1>'; 
+
+array_unshift($frutas, "Fresa"); //agregar al inicio
+echo '<br>'; 
+print_r($frutas);
+$eliminado = array_shift($frutas); //elimina el inicio
+echo '<br>'; 
+print_r($frutas);
+echo '<br>'; 
+echo $eliminado;
 
 
 ?>
