@@ -103,4 +103,10 @@ echo '<br>';
 echo $eliminado;
 
 
+echo '<h1>Ordenado</h1>'; 
+sort($frutas);
+echo '<br>'; 
+print_r($frutas);
+
+
 ?>
