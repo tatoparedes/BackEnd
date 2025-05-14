@@ -53,11 +53,6 @@ print_r($directorios);
 
 
 
-
-
-
-
-
 /*
 foreach($animales as $item)
 {
