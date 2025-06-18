@@ -14,12 +14,26 @@ if (!isset($_GET['num2']) or empty($_GET['num2'])   )
     $num2 =  0;
 }
         else
-        {
+ {
         $num2 =  $_GET['num2'];            
-        }
+ }
+
+ if (isset($_GET['Sumar']) )
+ {
+    $resultado = $num1 + $num2;    
+ }
+ elseif(isset($_GET['Restar']) )
+ {
+ $resultado = $num1 - $num2;
+ }
+else
+{
+$resultado = $num1 * $num2;
+}
+
+    
 
 
-$resultado = $num1 + $num2;
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +57,7 @@ $resultado = $num1 + $num2;
 </form>
 
 <?php
-echo "La suma es $resultado";
+echo "El resultado es $resultado";
 ?>
     
 </body>
