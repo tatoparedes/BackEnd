@@ -1,21 +1,24 @@
-<?php
-if isset($_GET['num1'])
+    <?php
+if (!isset($_GET['num1']) or empty($_GET['num1'])   )
 {
-$num1 =  $_GET['num1'];
+   $num1 =  0;
 }
 else
 {
-$num1 =  0;
+  $num1 =  $_GET['num1'];            
 }
 
-if isset($_GET['num2'])
+
+if (!isset($_GET['num2']) or empty($_GET['num2'])   )
 {
-$num2 =  $_GET['num2'];
+    $num2 =  0;
 }
-else
-{
-$num2 =  0;
-}
+        else
+        {
+        $num2 =  $_GET['num2'];            
+        }
+
+
 $resultado = $num1 + $num2;
 ?>
 
@@ -28,9 +31,15 @@ $resultado = $num1 + $num2;
 </head>
 <body>
 <form method="GET" >
-   Numero 1 : <input type="number" name = "num1" >
-   Numero 2 : <input type="number" name = "num2" >
+   Numero 1 : <input type="number" name = "num1" required>
+   Numero 2 : <input type="number" name = "num2" required>
+
 <button type="submit" name="Sumar">Sumar</button>  
+<button type="submit" name="Restar">Restar</button>  
+<button type="submit" name="Multiplicar">Multiplicar</button>  
+<button type="submit" name="Dividir">Dividir</button>  
+
+
 </form>
 
 <?php
