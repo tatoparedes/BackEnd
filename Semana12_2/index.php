@@ -26,9 +26,20 @@ if (!isset($_GET['num2']) or empty($_GET['num2'])   )
  {
  $resultado = $num1 - $num2;
  }
-else
+ elseif(isset($_GET['Multiplicar']))
 {
 $resultado = $num1 * $num2;
+}
+elseif(isset($_GET['Dividir']))
+{
+    if($num2 === 0){
+        echo "No se puede dividir entre 0";
+        $resultado = 0;
+    } else {
+        $resultado = $num1 / $num2;
+    } 
+} else {
+    $resultado = 0;
 }
 
     
